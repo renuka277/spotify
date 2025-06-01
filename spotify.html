@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Circular, Helvetica, Arial, sans-serif;
+            font-size: small;
+        }
+        .container
+        {   display: grid;
+            grid-template-columns: 450px auto;
+            grid-template-rows: 80px Auto;
+            grid-template-areas:
+            "first nav"
+            "right middle"
+            "right middle"
+            ;
+            background-color: black;
+        }
+        .nav
+        {
+            grid-area: nav;
+            display: flex;
+            justify-content: end;
+            flex-direction: row;
+            color: white;
+        }
+        .nav p
+        {
+            padding-right: 30px;
+            align-items: center;
+        }
+        .first
+        {
+            grid-area: first;
+            display: flex;
+            justify-content: start;
+            color: white;
+            font-size: x-large;
+        }
+        .first p
+        {
+            padding-right: 30px;
+            font-size: larger;
+        }
+        .right
+        {
+            background-color: rgba(70, 70, 73, 0.567);
+            grid-area: right;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .middle
+        {
+            background-color: rgb(39, 38, 38);
+            grid-area: middle;
+            border-radius: 20px;
+            
+        }
+        .images
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-right: 10px
+        }
+        .firsth
+        {   
+            background-color: rgba(0, 0, 0, 0.526);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .secondh
+        {
+            background-color: rgba(192, 192, 192, 0.181);
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .words ol
+        {    
+            display: flex;
+        }
+        .words li
+        {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 20px;
+            color: silver;
+            font-size: 13px;
+        }
+        .words ul
+        {
+            display: flex;
+        }
+        .words li
+        {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 20px;
+            color: silver;
+            font-size: 13px;
+        }
+        .img1
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .img2
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .img3
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .img4
+        {
+            display: flex;
+            flex-direction: column;
+        }
+         .img5
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .artists
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-right: 10px
+            
+        }
+
+      .artists img
+      {
+        border-radius: 50%;
+      }
+      .Charts
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-right: 10px
+        }
+        .line
+        {
+            color: silver;
+            margin-top: 40px;
+        }
+        .footer
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .a li
+        {
+            color: rgba(255, 255, 255, 0.679);
+        }
+        .b li
+        {
+            color: rgba(255, 255, 255, 0.679);
+        }
+        .c li
+        {
+            color: rgba(255, 255, 255, 0.679);
+        }
+        .d li
+        {
+            color: rgba(255, 255, 255, 0.679);
+        }
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="nav">
+        <p>Premium support download</p>
+        <p>Install app</p>
+        <p>Sign up</p>
+        <button style=" font-weight: bold; margin: 15px; border-radius: 35px; padding-left: 10px; " ><p>Log in</p></button>
+    </div>
+    <div class="first">
+        <p style=" margin-left: 30px ; width: 50px;"><i class="fas fa-compact-disc"></i></p>
+        <p><i class="fas fa-house"></i></p>
+        <button style="background-color: rgba(69, 67, 67, 0.573); color: white; margin: 10px; border-color: white; border-radius: 50px; border-width: 3px;"><p> <i style="padding-right: 5px;" class="fas fa-magnifying-glass"></i>What do you want to play?</p></button>
+    </div>
+    <div class="right">
+        <h1 style="color: white; font-size: 25px; margin-left: 15px; font-size: medium; ">Your Library</h1>
+        <div class="firsth"> 
+            <p style="font-size: 18px; font-weight: bold; color: white;  margin-left: 30px ; padding-left: 10px;  margin: 5px;">Create your first Playlist</p>
+            <p style="font-size: 15px;color: white;  margin-left: 30px; margin: 5px; padding-left: 10px;">It's easy we'll help you</p>  
+            <button style="border-radius: 30px; font-weight: bold; width: 150px; margin-bottom: 20px; margin-left: 10px; margin: 20px;" ><p>Create playlist</p></button>
+        </div>
+        <div class="firsth">
+            <p  style="font-size: 18px; font-weight: bold; color: white; margin-left: 20px; margin:5px; padding-left: 10px;" >Let's find some products podcasts to follow</p>
+            <p style="font-size: 15px;color: white; margin:5px; padding-left: 10px;">We'll keep you updated on new episodes</p>
+            <button style="border-radius: 30px; font-weight: bold; width: 150px; margin-bottom: 20px; margin-left: 20px; margin: 20px;" ><p>Browse podcast</p></button>
+        </div>
+        <div class="words">
+            <ol style="list-style: none;"> 
+                <li>Legal</li>
+                <li>Privacycenter</li>
+                <li>Privacypolicy</li>
+                <li>Cookies</li>
+            </ol>
+            <ul style="list-style: none;">
+                <li>Aboutus </li>
+                <li>Accessibility</li>
+            </ul>
+            <p style="color: white; padding-left: 58px; font-size: 15px;">Cookies</p>    
+            <button style=" font-weight: bold; background-color: rgba(70, 70, 73, 0.567); border-radius: 20px; margin-left: 50px; color: white; padding-left:15px ; padding-right:15px ;"><p>English</p></button>
+        </div>
+    </div>
+    <div class="middle">
+        <h1 style="color: white;text-align: center; text-align: left; margin-left: 25px;">Trending songs</h1><br>
+        <div class="images">
+            <div class="img1">
+                <img src="./../Images/minnalvala.jpg" width="150" height="150" alt="img1">
+                <p style="color: white; margin: 5px;">Minnalvala</p>
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; ">Jakes bejoy,sid sriram, <br> Sithara Krishnakumar</p>
+            </div>
+            <div class="img2">
+                <img src="./../Images/ishq mera.jpg"  width="150" height="150" alt="img2">
+                <p style="color: white; margin: 5px">Ishq Mare</p>
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >Jubin Nautiyal, <br> Akashdeep sengupta,..</p>
+            </div>
+            <div class="img3">
+                <img src="./../Images/Laal-Pari.jpg"  width="150" height="150" alt="img3">
+                <p style="color: white; margin: 5px">Laal Pari</p>
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >yo yo Honey Singh, <br> Simar Kaur, Alfaaz</p>
+            </div>
+            <div class="img4">
+                <img src="./../Images/stfu.jpg"  width="150" height="150" alt="img4">
+                <p style="color: white; margin: 5px">STFU</p>
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >Ap Dhillion, shinda kahlon</p>
+            </div>            
+            <div class="img5">
+                <img src="./../Images/shaky.jpg"  width="150" height="150" alt="img5">
+                <p style="color: white; margin: 5px">Shaky</p>
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >Sanju Rathod, G-SPXRK</p>
+            </div>
+        </div>
+        <h1 style="color: white; margin-left: 20px;" >Popular Artists</h1>
+        <div class="artists">
+            
+            <div class="a1">
+                <img src="./../Images/pritam.jpg" width="170" height="170" alt="a1">
+                <p style="color: white;  " >Pritam</p>
+            </div>
+            <div class="a2">
+                <img src="./../Images/arijit singh.jpg" width="170" height="170" alt="a2">
+                 <p style="color: white;" >Arijit Singh</p>
+            </div>
+            <div class="a3">
+             <img src="./../Images/rahman.jpg" width="170" height="170" alt="a3">
+             <p style="color: white;" >A.R.Rahman</p>
+            </div>
+            <div class="a4">
+                <img src="./../Images/sachin-jigar.jpg"  width="170" height="170" alt="a4">
+                <p style="color: white;" >Sachin-jigar</p>
+            </div>
+            <div class="a5">
+                <img src="./../Images/vishal-shekhar.jpg"  width="170" height="170" alt="a5">
+                <p style="color: white;" >Vishal-Shekhar</p>
+            </div>
+        </div>
+        <h1 style="color: white; margin-left: 30px;" >Featured Songs</h1>
+        <div class="Charts">
+            <div class="f1">
+                <img src="./../Images/f5.jpg" width="150" height="150" alt="viral">
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >your daily update of the <br> most viral tracks right..</p>
+            </div>
+            <div class="f2">
+                <img src="./../Images/f1.jpg" width="150" height="150" alt="global">
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >your weekly update of <br> the most played track..</p>
+            </div>
+            <div class="f3">
+                <img src="./../Images/f2.jpg" width="150" height="150" alt="">
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " > your weekly update of <br> the most played track..</p>
+            </div>
+            <div class="f4">
+                <img src="./../Images/f3.jpg" width="150" height="150" alt="">
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >your weekly update of <br> the most played track..</p>
+            </div>
+            <div class="f5">
+                <img src="./../Images/f4.jpg" width="150" height="150" alt="usa">
+                <p style="color: rgba(255, 255, 255, 0.679); margin:5px; font-size: small; " >your weekly update of <br> the most played track..</p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="footer">
+        <div class="a" >
+            <h3 style="color: white; font-weight: bold; padding-left: 30px;">Company</h3>
+            <ol style="list-style: none;">
+                <li>About</li>
+                <li>Jobs</li>
+                <li>For the Record</li>
+            </ol>
+            </ol>
+        </div>
+        <div class="b">
+            <h3 style="color: white; font-weight: bold; padding-left: 30px;" >Communities</h3>
+            <ol style="list-style: none;">
+                <li>For Artists</li>
+                <li>Developers</li>
+                <li>Adverting</li>
+                <li>Investors</li>
+                <li>Venders</li>
+            </ol>
+        </div>
+        <div class="c">
+            <h3 style="color: white; font-weight: bold; padding-left: 30px;" >Useful links</h3>
+            <ol style="list-style: none;">
+                <li>Support</li>
+                <li>Free Mobile App</li>
+                <li>popular by Country</li>
+            </ol>
+        </div>
+        <div class="d">
+              <h3 style="color: white; font-weight: bold; padding-left: 30px;" >Spotify Plans</h3>
+              <ol style="list-style: none;">
+                <li>Premium individual</li>
+                <li>Premium Duo</li>
+                <li>Premium Student</li>
+                <li>Spotify Free</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+   
+
+   
+</body>
+</html>
